@@ -60,7 +60,7 @@ router.delete("/usuario/:id", async (req, res) => {
   try {
     await deleteUsuario(req.params.id);
     res.status(200).json({ message: "Usuário excluido com sucesso!" });
-  } catch (error) {import roteadorUsuario from "./routes/usuario.js";
+  } catch (error) {
     res.status(error.status || 500).json({ message: error.message || "Erro!" });
   }
 });
