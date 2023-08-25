@@ -1,7 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
+dotenv.config();   // Requisição do pacote do express
 import roteadorUsuario from "./routes/usuario.js";
-dotenv.config();      // Requisição do pacote do express
+   
 //index.js
 import { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario } from "./db/index.js";
 
